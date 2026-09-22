@@ -1,0 +1,13 @@
+{
+  "sourceRepository": "Mobcheese/mobster-mouse-assets",
+  "sourceRepositoryUrl": "https://github.com/Mobcheese/mobster-mouse-assets",
+  "integration": "The demo is self-contained so it also works when the private asset repository is unavailable to the browser.",
+  "replaceableArt": {
+    "player": "sprites/mobster-mouse-sprite-sheet.jpg",
+    "districtMap": "terrain/gangster-city-map.jpg",
+    "docks": "terrain/district-docks.jpg",
+    "casino": "terrain/district-casino-strip.jpg",
+    "uptown": "terrain/district-uptown-park.jpg",
+    "token": "ui/token-icon.jpg"
+  }
+}

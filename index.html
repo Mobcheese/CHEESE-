@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CHEESE//MOB — Neon Syndicate</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">🐭</span><span>CHEESE<span class="accent">//</span>MOB</span></div>
+      <div class="wallet-area"><span id="walletStatus">Wallet offline</span><button id="walletButton">Connect wallet</button></div>
+    </header>
+
+    <section class="hero">
+      <div>
+        <p class="eyebrow">SOLANA UNDERGROUND // DEMO BUILD</p>
+        <h1>Rule the <em>night.</em></h1>
+        <p class="lede">Build your crew, raid the districts, and stack the cheese.</p>
+      </div>
+      <div class="stats" aria-label="Game statistics">
+        <div><span>CHEESE</span><strong id="score">0</strong></div>
+        <div><span>RANK</span><strong id="rank">ROOKIE</strong></div>
+        <div><span>DISTRICT</span><strong id="districtLabel">DOCKS</strong></div>
+      </div>
+    </section>
+
+    <section class="game-layout">
+      <div class="game-card">
+        <div class="district-tabs" role="tablist">
+          <button class="district active" data-district="docks">Docks</button>
+          <button class="district" data-district="casino">Casino Strip</button>
+          <button class="district" data-district="uptown">Uptown Park</button>
+        </div>
+        <div id="game" class="game" tabindex="0" aria-label="Playable game area">
+          <div class="scanlines"></div>
+          <div id="tokenLayer"></div>
+          <div id="player" class="player" aria-label="Mobster mouse"><span class="ear left"></span><span class="ear right"></span><span class="eye left"></span><span class="eye right"></span><span class="nose"></span><span class="hat">★</span></div>
+          <div class="instructions">MOVE <b>WASD</b> / <b>ARROWS</b> &nbsp;•&nbsp; COLLECT THE CHEESE</div>
+        </div>
+      </div>
+      <aside class="side-panel">
+        <div class="panel-heading"><span class="live-dot"></span> SYNDICATE FEED</div>
+        <div id="feed" class="feed"><p><b>DON VERMICELLI</b><br>Welcome to the operation, soldier.</p><p><b>TIP</b><br>Collect tokens to increase your rank.</p></div>
+        <div class="mission"><span>NEXT MISSION</span><strong>Clean the Docks</strong><small>Collect 10 cheese tokens</small><div class="progress"><i id="progress"></i></div></div>
+      </aside>
+    </section>
+    <footer>CHEESE//MOB DEMO <span>•</span> ART DIRECTION: MOBSTER MOUSE ASSETS <span>•</span> NO REAL FUNDS OR TRANSACTIONS</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
